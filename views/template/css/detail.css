@@ -1,0 +1,161 @@
+
+@font-face {
+    font-family: worksansBold;
+    src: url(../font/WorkSans-SemiBold.ttf);
+}
+
+img {
+    width: 90%;
+}
+
+.product_sp1, .gift_infor {
+    display: flex;
+}
+
+.img_product {
+    flex: 1;
+}
+
+.infor_product {
+    flex: 1;
+}
+
+button {
+    background-color: #d2d2d7; 
+    padding: 10px 15px; 
+    outline: none; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 14px; 
+    border-radius: 3px;
+}
+
+.top_infor {
+    border-bottom:  1px solid #ccc;
+    font-family: worksansBold;
+    font-size: 20px;
+}
+
+.top_infor h2 {
+    margin: 0;
+}
+
+.star_product {
+    padding: 10px 0;
+}
+
+.star_product .fa-solid {
+    color: #feb700;
+    font-size: 15px;
+}
+
+.price_infor {
+    font-family: worksansBold;
+    font-size: 20px;
+}
+
+.bottom_infor {
+    background-color: #ffffff;
+    color: #515154;
+    border-radius: 10px;
+}
+
+.gift_infor, .title_descrip, .title_similar, .title_cus {
+    border-bottom: 1px solid #efefef;
+    padding: 15px;
+    font-family: worksansBold;
+}
+
+.gift_infor p, .title_descrip p, .list_feature p, .title_similar p, .title_cus p {
+    margin: 0;
+}
+
+.fa-gift {
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.sale_infor {
+    padding:10px 15px;
+}
+
+.title_sale {
+    padding-left: 10px;
+    display: flex;
+    color: #f00;
+    font-family: worksansBold;
+}
+
+.title_sale p {
+    margin: 0;
+}
+
+.fa-circle-check {
+    font-size: 12px;
+    padding-right: 6px;
+    padding-top: 2px;
+}
+
+.sale_detail {
+    padding-left: 30px;
+}
+
+.sale_detail p{
+    margin: 15px 0;
+}
+
+.description_product, .similar_product, .customer_comment {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.list_feature {
+    padding:  20px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.list_similar_pro  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list_similar_pro {
+    margin-left: -20px;
+    padding: 20px;
+}
+
+.list_similar_pro img {
+    width: 50%;
+    
+}
+
+p a {
+    font-size: 17px;
+    font-family: worksansBold;
+}
+
+p a:hover {
+    color: #0066cc;
+}
+
+.similar_pro_price .price  {
+    color: #f00;
+}
+
+.similar_pro_box {
+    /* border: 1px solid #d2d2d7; */
+    width: calc(25% - 20px);
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0 ,0.1);
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: center
+}
+
+
+
+
+
+
+

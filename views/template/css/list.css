@@ -1,0 +1,127 @@
+.ds__title {
+   
+    line-height: 55px;
+   
+    text-align: center;
+}
+
+.ds__title h2 {
+    margin-bottom: 0;
+}
+
+table {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+@font-face {
+    font-family: worksansBold;
+    src: url(../font/WorkSans-SemiBold.ttf);
+}
+
+.danh__sach {
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.content__table thead tr {
+    background-color: #2783df;
+    font-family: worksansBold;
+    color: #ffffff;
+}
+
+.content__table {
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px 5px 0 0;
+}
+
+.content__table tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content__table th, .content__table td {
+    padding: 15px 7px;
+}
+
+td {
+    text-align: center;
+}
+
+tbody .mo_ta {
+    text-align:justify;
+}
+
+img {
+    width: 60%;
+}
+
+.content__table tbody button {
+    padding: 0 10px;
+    line-height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.content__table tbody tr:last-of-type{
+    border-bottom: 2px solid #0066cc;
+}
+
+
+
+button {
+    text-decoration: none;
+    line-height: 35px;
+    padding: 0 20px;
+    border: 1px solid #0066cc;
+    border-radius: 35px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    background-color: #ffffff;
+    font-weight: bolder;
+}
+
+button a {
+    color: #0066cc;
+}
+
+ button:hover {
+    background-color: #0066cc;
+    color: white;
+}
+
+ button:hover a {
+    color: white;
+}
+
+.button__active {
+    padding: 20px;
+    text-align: center;
+}
+
+.search_product {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search_product input {
+    line-height: 30px;
+    border-radius: 10px;
+    border: 1px solid #0066cc;
+    
+}
+
+.search_product select {
+    padding: 8px 0px;
+    border-radius: 10px;
+    border: 1px solid #0066cc;
+    color: #0066cc;
+}
+
+.search_product .btn_submit {
+    padding: 0 15px;
+    background-color: #ffffff;
+    color: #0066cc;
+}
