@@ -17,11 +17,10 @@
             <h2>Danh sách khách hàng</h2>
         </div>
 
-        <div class="button__active">
-            
+        <!-- <div class="button__active">
             <button><a href="../../../../WEB2041-FA22.WE17309/MVC/index.php?url=them_khach_hang">Thêm mới</a></button> 
             <button><a href="../../../../WEB2041-FA22.WE17309/MVC/index.php?url=sua_khach_hang">Chỉnh sửa</a></button> 
-        </div>
+        </div> -->
         
         <table class="content__table">
             <thead>
@@ -29,8 +28,8 @@
                     <th>Mã khách hàng</th>
                     <th>Mật khẩu</th>
                     <th>Họ và tên</th>
-                    <th>Kích hoạt</th>
-                    <th>Hình</th>
+                    <!-- <th>Kích hoạt</th>
+                    <th>Hình</th> -->
                     <th>Email</th>
                     <th>Vai trò</th>
                     <th>Active</th>
@@ -42,14 +41,12 @@
                         <td><?= $value['ma_kh']  ?></td>
                         <td><?= $value['mat_khau']  ?></td>
                         <td><?= $value['ho_ten']  ?></td>
-                        <td><?= $value['kich_hoat']  ?></td>
-                        <td><img style="width: 30%;" src="views/template/images/khach_hang/<?= $value['hinh']  ?>"></td>
+                        <!-- <td><?= $value['kich_hoat']  ?></td>
+                        <td><img style="width: 30%;" src="views/template/images/khach_hang/<?= $value['hinh']  ?>"></td> -->
                         <td><?= $value['email']  ?></td>
                         <td><?= $value['vai_tro']  ?></td>
                         <td>
-                           
                             <button><a href="../../../../WEB2041-FA22.WE17309/MVC/index.php?url=xoa_khach_hang&id=<?= $value['ma_kh'] ?>" onclick="return confirm('Bạn có muốn xoá không?')">Xoá</a></button>
-                            <button><a href="">Sửa</a></button>
                         </td>
                     </tr>
                 <?php endforeach ?>

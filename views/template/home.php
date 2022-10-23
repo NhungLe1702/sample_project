@@ -24,15 +24,6 @@
         }, 5000);
     </script>
 
-    <style>
-        /* body {
-            background-color: #f5f5f7;
-        }
-
-        .product_box_img {
-            background-color: #ffffff;
-        } */
-    </style>
 </head>
 
 <body>
@@ -114,7 +105,13 @@
 
                 <?php require('views/template/aside.php'); ?>
             </div>
+
+            <div class="link_product_insert">
+                <a href="index.php?url=san_pham">Xem thêm</a>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
         </div>
+
     </section>
 
 </body>

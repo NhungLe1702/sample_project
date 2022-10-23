@@ -12,7 +12,7 @@
 <body>
     <div class="add">
         <div class="add__title">
-            <h2>Thêm mới danh mục</h2>
+            <h2>Cập nhật danh mục</h2>
 
         </div>
 

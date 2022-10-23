@@ -18,7 +18,7 @@
         </div>
 
         <div class="add_link">
-            <a class="link" href="../../../../WEB2041-FA22.WE17309/MVC/index.php?url=ds_danh_muc">Danh sách</a>
+            <a class="link" href="../../../../WEB2041-FA22.WE17309/MVC/index.php?url=ds_danh_muc" name="btn_list">Danh sách</a>
         </div>
 
         <form action="../../../../WEB2041-FA22.WE17309/MVC/index.php?url=them_danh_muc" method="POST" enctype="multipart/form-data">

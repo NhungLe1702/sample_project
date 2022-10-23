@@ -13,17 +13,6 @@ function formTaoKhachHang() {
     include('views/khach_hang/tao_moi.php');
 }
 
-function registerForm(){
-    include('views/user/register.php');
-}
-
-function logInform() {
-    
-}
-
-function logoutUser() {
-
-}
 
 
 

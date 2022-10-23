@@ -9,15 +9,10 @@
     <link rel="stylesheet" href="views/template/css/header.css">
 
     <link rel="stylesheet" href="views/template/icon/css/all.css">
-    <style>
-        aside {
-            min-height: 1500px;
-        }
-    </style>
 </head>
 <body>
     <aside>
-        <div class="account">
+        <!-- <div class="account">
             <div class="title">
                 <p>Tài khoản</p>
             </div>
@@ -39,14 +34,69 @@
                     <label>Ghi nhớ tài khoản</label>
                 </div>
 
-                <button>Đăng nhập</button>
+                <button type="submit" name="login">Đăng nhập</button>
 
                 <div class="forget-account">
                     <li><a href="#">Quên mật khẩu</a></li>
                     <li><a href="../../../../WEB2041-FA22.WE17309/MVC/index.php?url=dang_ky">Đăng kí thành viên</a></li>
                 </div>
             </form>
+        </div> -->
+
+        <?php
+            if (isset($_SESSION['user'])) {
+                extract($_SESSION['user']);
+        ?>
+
+        <div class="account">
+            <div class="title">
+                <p>Tài khoản</p>
+            </div>
+
+            <div class="aside-list">
+                <li>Xin Chào <a href="index.php?url=update_user&user_id=<?= $ma_kh ?>"><?= $ho_ten ?></a></li>
+                <li><a href="index.php?url=update_user&user_id=<?= $ma_kh ?>">Cập Nhật Tài Khoản</a></li>
+                <li><a href="index.php?url=logout">Đăng Xuất</a></li>
+            </div>
         </div>
+
+        <?php
+
+            } else {
+
+        ?>
+            <div class="account">
+                <div class="title">
+                    <p>Tài khoản</p>
+                </div>
+
+                <form class="form-login" action="index.php?url=dang_nhap" method="POST">
+                    <div class="form-group">
+                        <legend>Tên đăng nhập</legend>
+                        <input type="text" name="user_name">
+                    </div>
+
+                    <div class="form-group">
+                        <legend>Mật khẩu</legend>
+                        <input type="password" name="password">
+                    </div>
+
+
+                    <div class="save_account">
+                        <input type="checkbox" name="" id="">
+                        <label>Ghi nhớ tài khoản</label>
+                    </div>
+
+                    <button type="submit" name="login">Đăng nhập</button>
+
+                    <div class="forget-account">
+                        <li><a href="#">Quên mật khẩu</a></li>
+                        <li><a href="index.php?url=dang_ky">Đăng kí thành viên</a></li>
+                    </div>
+                </form>
+            </div>
+
+        <?php } ?>
 
         <div class="search_pro">
             <div class="title">

@@ -4,7 +4,7 @@ require('controllers/SanPham.php');
 require('controllers/KhachHang.php');
 require('controllers/DanhMuc.php');
 require('controllers/BinhLuan.php');
-
+require('controllers/account.php');
 include('views/template/header_admin.php');
 
 // Chỉ dùng để quản lý đường dẫn và điều hướng đến màn hình phù hợp
@@ -17,6 +17,22 @@ switch ($url) {
 
     case 'trang_chu':
         hienThiTrangChu();
+        break;
+
+    case 'san_pham':
+        sanPham();
+        break;
+
+    case 'gioi_thieu':
+        GioiThieu();
+        break;
+
+    case 'lien_he':
+        lienHe();
+        break;
+
+    case 'hoi_dap':
+        hoiDap();
         break;
 
     // Sản phẩm
@@ -58,7 +74,6 @@ switch ($url) {
         timKiemSanPham();
         break; 
 
-
     // Khách hàng
 
     case 'ds_khach_hang':
@@ -99,8 +114,6 @@ switch ($url) {
     case 'update_danh_muc':
         suaDanhMuc();
         break;
-
-
     // Bình luận
 
 
@@ -113,27 +126,28 @@ switch ($url) {
         bieu_do();
         break;
 
-
-    
     case 'dang_ky':
         registerForm();
-        
         break;
-
+        
     case 'dang_nhap':
-        logInForm();
-        break;   
+        loginForm();
+        break;
     
     case 'logout':
         logoutUser();
         break;
+    
+    case 'update_user':
+        updateFormUser();
+        break;
 
-
-
+    
 
     default:
         echo 'Đường dẫn không tồn tại';
         break;
+
 }
 
 include('views/template/footer.php');

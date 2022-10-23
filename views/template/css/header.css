@@ -402,6 +402,10 @@ article {
     margin-bottom: 30px;
 }
 
+.insert--sp {
+    width: 21%;
+}
+
 .product_box_img img {
     border-radius: 10px;
     width: 100%;
@@ -575,6 +579,25 @@ article {
     background: var(--product-color);
     position: absolute;
     bottom: 0;
+}
+ 
+/* Xem thêm */
+
+.link_product_insert {
+    text-align: center;
+    font-style: italic;
+}
+
+.link_product_insert .fa-solid {
+    font-size: 12px;
+}
+
+.link_product_insert a, .link_product_insert .fa-solid {
+    color: #0066cc;
+}
+
+.link_product_insert a:hover {
+    text-decoration: underline;
 }
 
 

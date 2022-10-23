@@ -7,6 +7,26 @@ function hienThiTrangChu()
     require('views/template/home.php');
 }
 
+function GioiThieu() {
+    include('views/Client/gioi_thieu.php');
+}
+
+function lienHe() {
+    include('views/Client/lien_he.php');
+}
+
+function hoiDap() {
+    include('views/Client/hoi_dap.php');
+}
+
+function sanPham() {
+    $ds_sp = layDSSanPham();
+    include('views/Client/san_pham.php');
+}
+
+
+
+
 function hienThiSanPham()
 {
     $ds_sp = layDSSanPham();
@@ -79,5 +99,7 @@ function bieu_do() {
     $thong_ke = thongKeSanPhamLoaiHang();
     include ('views/thong_ke/bieu_do.php');
 }
+
+
 
 

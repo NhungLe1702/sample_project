@@ -20,14 +20,12 @@
 
         <div class="button__active">
             <button><a href="../../../../WEB2041-FA22.WE17309/MVC/index.php?url=them_danh_muc">Thêm mới</a></button>
-            <button><a href="#">Chọn tất cả</a></button>
-            <button><a href="#">Bỏ chọn tất cả</a></button>
+            
         </div>
 
         <table style="width: 100%;" class="content__table">
             <thead>
                 <tr>
-                    <th>#</th>
                     <th>Mã loại</th>
                     <th>Tên loại loại</th>
                     <th>Active</th>
@@ -36,7 +34,7 @@
             <tbody>
                 <?php foreach ($ds_dm as $key => $value) : ?>
                     <tr>
-                        <td><input type="checkbox"></td>
+                        
                         <td><?= $value['ma_loai']  ?></td>
                         <td><?= $value['ten_loai']  ?></td>
                         <td>

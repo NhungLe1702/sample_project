@@ -18,7 +18,7 @@
                 <a class="link" href="../../../../WEB2041-FA22.WE17309/MVC/index.php?url=dang_nhap">Đăng nhập</a>
         </div>
         
-        <form action="../../../../WEB2041-FA22.WE17309/MVC/index.php?url=update_danhmuc" method="POST" enctype="multipart/form-data">
+        <form action="../../../../WEB2041-FA22.WE17309/MVC/index.php?url=dang_ky" method="POST" enctype="multipart/form-data">
             <div class="form__div">
                 <label>Họ tên</label>
                 <input type="text" name="full_name">
@@ -34,10 +34,10 @@
             
             <div class="form__div">
                 <label>Email</label>
-                <input type="email" name="name">
+                <input type="email" name="email">
             </div>
             <div class="form__btn">
-                <input class="save" type="submit" name="btn_save" value="Đăng Ký">
+                <input class="save" type="submit" name="register" value="Đăng Ký">
                 <input type="reset" name="btn_reset" value="Reset">
             </div>
             

@@ -1,8 +1,8 @@
 <?php
-
+session_start();
 require_once('models/db.php');
 
-// $table = 'loai';
+
 
 // Lấy danh sách
 function layDSKhachHang()
@@ -58,6 +58,79 @@ function xoaKhachHang($id)
     $sql = "DELETE FROM khach_hang WHERE ma_kh = '$id'";
     $xoa_sp = pdo_execute($sql);
 }
+
+function login()
+{
+    if (isset($_POST['login'])) {
+        $user_name = $_POST["user_name"];
+        $password = $_POST["password"];
+        $sql = "SELECT * FROM khach_hang WHERE ma_kh = '$user_name'";
+        
+        //lấy dữ liệu
+        $user = getData($sql, FETCH_ONE);
+        // var_dump($user);
+        if ($user) {
+            //kiểm tra mật khẩu
+            if ($user['mat_khau'] == $password) {
+                //tạo session
+                $_SESSION['user'] = $user;
+                header("location: index.php?url=trang_chu");
+                exit();
+            } else {
+                $error = "Tài khoản hoặc mật khẩu không đúng";
+            }
+        } else {
+            $error = "Tài khoản hoặc mật khẩu không đúng";
+        }
+    }
+}
+
+function logout()
+{
+    session_unset();
+}
+
+function getUser($user_id)
+{
+    $sql = "SELECT * FROM khach_hang WHERE ma_kh = '$user_id'";
+    $user = getData($sql, FETCH_ONE);
+    return $user;
+}
+
+function updateUser()
+{
+    if (isset($_POST['update'])) {
+        $ma_kh = $_POST["ma_kh"];
+        $full_name = $_POST["full_name"];
+        $user_name = $_POST["user_name"];
+        $password = $_POST["password"];
+        $email = $_POST["email"];
+        $sql = "UPDATE user SET ma_kh = '$user_name', mat_khau = '$password', ho_ten = '$full_name', email = '$email' WHERE ma_kh = '$ma_kh";
+        pdo_execute($sql);
+        // $alert = "Đăng ký thành công, vui lòng đăng nhập";
+
+    }
+}
+
+function register()
+{
+    // $error = [];
+    if (isset($_POST["register"])) {
+        $full_name = $_POST["full_name"];
+        $user_name = $_POST["user_name"];
+        $password = $_POST["password"];
+        $email = $_POST["email"];
+        
+        $sql = "INSERT INTO khach_hang(ma_kh, mat_khau, ho_ten, email) VALUES('$user_name', '$password', '$full_name', '$email')";
+        $add = pdo_execute($sql);
+        // $alert = "Đăng ký thành công, vui lòng đăng nhập";
+    }
+}
+
+
+
+
+
 
 
 // Cập nhật

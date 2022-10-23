@@ -48,10 +48,10 @@
                 <input type="number" value="<?php echo $lay_sp['giam_gia']; ?>" name="giam_gia">
             </div>
 
-            <div class="form_div">
-                <label>Image</label>
+            <div class="form_div" style="display:flex">
+                <label style="flex:1">Image</label>
                 <div class="img">
-                    <img src="views/template/images/san_pham/<?php echo $lay_sp['hinh'] ?>">
+                    <img style="width: 30%; flex:2;" src="views/template/images/san_pham/<?php echo $lay_sp['hinh'] ?>">
                 </div>
             </div>
 

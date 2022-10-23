@@ -49,8 +49,7 @@
         
         <div class="button__active">
             <button><a href="../../../../WEB2041-FA22.WE17309/MVC/index.php?url=them_san_pham">Thêm mới</a></button>
-            <button><a href="#">Chọn tất cả</a></button>
-            <button><a href="#">Bỏ chọn tất cả</a></button>
+            
         </div>
         
         <div class="search_product">
@@ -70,7 +69,7 @@
         <table class="content__table">
             <thead>
                 <tr class="title__table">
-                    <td>#</td>
+                   
                     <td>Mã </td>
                     <td>Tên</td>
                     <td>Giá</td>
@@ -88,7 +87,7 @@
             <tbody>
                 <?php foreach ($ds_sp as $key => $value) : ?>
                     <tr>
-                        <td><input type="checkbox"></td>
+                        
                         <td><?= $value['ma_hh']  ?></td>
                         <td><?= $value['ten_hh']  ?></td>
                         <td><?= $value['don_gia']  ?></td>
