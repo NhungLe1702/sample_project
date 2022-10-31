@@ -71,7 +71,7 @@ function login()
         // var_dump($user);
         if ($user) {
             //kiểm tra mật khẩu
-            if ($user['mat_khau'] == $password) {
+            if ($user['mat_khau'] === $password) {
                 //tạo session
                 $_SESSION['user'] = $user;
                 header("location: index.php?url=trang_chu");
@@ -128,10 +128,3 @@ function register()
 }
 
 
-
-
-
-
-
-// Cập nhật
-// Xoá

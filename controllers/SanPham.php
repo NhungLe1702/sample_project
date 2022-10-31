@@ -44,7 +44,7 @@ function formSuaSanPham()
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
         $lay_sp = layMotSanPham($id);
-    }
+    } 
     include('views/san_pham/chinh_sua.php');
 }
 

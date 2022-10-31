@@ -32,7 +32,7 @@
                 <label>Mã hàng hoá</label>
                 <input type="text" value="<?php echo $lay_sp['ma_hh']; ?>" name="ma_hh">
             </div>
-
+            <!-- echo isset($lay_sp['ma_hh']) ?$lay_sp['ma_hh'] :"" ; -->
             <div class="form__div">
                 <label>Tên hàng hoá</label>
                 <input type="text" value="<?php echo $lay_sp['ten_hh']; ?>" name="name">
