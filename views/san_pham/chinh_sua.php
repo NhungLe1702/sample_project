@@ -32,7 +32,10 @@
                 <label>Mã hàng hoá</label>
                 <input type="text" value="<?php echo $lay_sp['ma_hh']; ?>" name="ma_hh">
             </div>
+
+            <!-- Nếu xoá &id = trên đường dẫn thì form sẽ có lỗi nên sử dụng toán tử 3 ngôi để xét có tồn tại mới echo -->
             <!-- echo isset($lay_sp['ma_hh']) ?$lay_sp['ma_hh'] :"" ; -->
+
             <div class="form__div">
                 <label>Tên hàng hoá</label>
                 <input type="text" value="<?php echo $lay_sp['ten_hh']; ?>" name="name">
