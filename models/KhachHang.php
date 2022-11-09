@@ -105,7 +105,7 @@ function updateUser()
         $user_name = $_POST["user_name"];
         $password = $_POST["password"];
         $email = $_POST["email"];
-        $sql = "UPDATE user SET ma_kh = '$user_name', mat_khau = '$password', ho_ten = '$full_name', email = '$email' WHERE ma_kh = '$ma_kh";
+        $sql = "UPDATE khach_hang SET ma_kh = '$user_name', mat_khau = '$password', ho_ten = '$full_name', email = '$email' WHERE ma_kh = '$ma_kh";
         pdo_execute($sql);
         // $alert = "Đăng ký thành công, vui lòng đăng nhập";
 

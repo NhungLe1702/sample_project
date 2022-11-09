@@ -5,6 +5,7 @@ require('controllers/KhachHang.php');
 require('controllers/DanhMuc.php');
 require('controllers/BinhLuan.php');
 require('controllers/account.php');
+
 include('views/template/header_admin.php');
 
 // Chỉ dùng để quản lý đường dẫn và điều hướng đến màn hình phù hợp
@@ -142,6 +143,9 @@ switch ($url) {
         updateFormUser();
         break;
 
+    case 'update_user_info':
+        updateUserInfo();
+        break;
     
 
     default:
